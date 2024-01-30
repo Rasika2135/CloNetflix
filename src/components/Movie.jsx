@@ -1,19 +1,7 @@
-import React, { useState } from 'react';
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import { UserAuth } from '../context/AuthContext';
+import React  from 'react';
 
 const Movie = ({ item }) => {
-  const [like, setLike] = useState(false);
-  const { user } = UserAuth();
-
-  const saveShow = () => {
-    if (user?.email) {
-      setLike(!like);
-
-      console.log(`Movie ${item.title} saved for user ${user.email}`);
-    }
-   
-  };
+ 
 
   return (
     <div className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2'>
@@ -32,13 +20,7 @@ const Movie = ({ item }) => {
         <p className='white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center'>
           {item?.title}
         </p>
-        <p onClick={saveShow}>
-          {like ? (
-            <FaHeart className='absolute top-4 left-4 text-gray-300' />
-          ) : (
-            <FaRegHeart className='absolute top-4 left-4 text-gray-300' />
-          )}
-        </p>
+        
       </div>
     </div>
   );

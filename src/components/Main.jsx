@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import requests from '../Requests';
-import {AiOutlinePlayCircle, AiOutlineInfoCircle, AiOutlineClose } from 'react-icons/ai';
+import {AiOutlineClose } from 'react-icons/ai';
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
@@ -77,14 +77,14 @@ const Main = () => {
           <h1 className='text-3xl md:text-5xl font-bold'>{movie?.title}</h1>
           <div className='my-4'>
             <button
-              className='border bg-gray-300 text-black border-gray-300 py-2 px-5 '
+              className='border bg-gray-300 text-black border-gray-300 py-2 px-5 rounded'
               onClick={handlePlayClick}
             >
-            <AiOutlinePlayCircle className='ml-1' />Play 
+            Play 
             </button>
-            <button className='border text-white border-gray-300 py-2 px-5 ml-4'>
+            <button className='border text-white border-gray-300 py-2 px-5 ml-4 rounded'>
            
-            <AiOutlineInfoCircle className='ml-5' />More info
+            My List
             </button>
           </div>
           <p className='text-gray-400 text-sm'>

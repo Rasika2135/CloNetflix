@@ -15,7 +15,7 @@ const NavBar = () => {
         </Link>
         {/* Add the new image on the right side */}
         <img
-          src="https://i.pinimg.com/474x/44/78/1b/44781ba4ac0c63f2ecf0793a533bf8dc.jpg"
+          src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-dyrp6bw6adbulg5b.jpg"
           alt="Netflix-avatar"
           className="h-8 cursor-pointer"
           style={{ marginRight: '16px' }} 
